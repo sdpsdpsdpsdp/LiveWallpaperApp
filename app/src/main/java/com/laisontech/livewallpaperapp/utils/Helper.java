@@ -26,9 +26,9 @@ public class Helper {
         return true;
     }
 
-    public static void OpenActivity(Class<?> clz) {
+    public static void OpenActivity(Context context,Class<?> clz) {
         Intent intent = new Intent();
-        intent.setClass(WallpaperApp.getInstance().getApplicationContext(), clz);
-        WallpaperApp.getInstance().getApplicationContext().startActivity(intent);
+        intent.setClass(context, clz);
+        context.startActivity(intent);
     }
 }
