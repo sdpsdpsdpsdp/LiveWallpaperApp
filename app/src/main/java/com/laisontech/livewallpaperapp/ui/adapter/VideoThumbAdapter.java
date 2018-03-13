@@ -67,7 +67,7 @@ public class VideoThumbAdapter extends CommonAdapter<EntityVideo> {
                 return;
             }
             EventBus.getDefault().postSticky(new VideoEvent(path));
-            Helper.OpenActivity(VideoPlayActivity.class);
+            Helper.OpenActivity(mContext,VideoPlayActivity.class);
         }
     }
 }
