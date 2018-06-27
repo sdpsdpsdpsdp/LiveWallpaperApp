@@ -1,10 +1,12 @@
-package com.laisontech.livewallpaperapp;
+package com.laisontech.livewallpaperapp.ui.activity;
 
 import android.Manifest;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.GridView;
+import android.widget.ImageView;
 
+import com.laisontech.livewallpaperapp.R;
 import com.laisontech.livewallpaperapp.base.CheckPermissionsActivity;
 import com.laisontech.livewallpaperapp.entity.EntityVideo;
 import com.laisontech.livewallpaperapp.ui.adapter.VideoThumbAdapter;
@@ -50,6 +52,6 @@ public class MainActivity extends CheckPermissionsActivity {
             VideoThumbAdapter videoThumbAdapter = new VideoThumbAdapter(this, mVideoFromSDCard);
             gridView.setAdapter(videoThumbAdapter);
         }
-
     }
+
 }
